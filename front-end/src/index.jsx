@@ -4,6 +4,8 @@ import './img/favicon.ico';
 import './css/index.css';
 import './css/pure-min.css';
 
+import App from './components/App';
+
 ReactDOM.render(
     <h1>Bem-vindo ao React!</h1>,
     document.querySelector("#main")
