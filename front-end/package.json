@@ -2,8 +2,9 @@
   "name": "behappywith.me",
   "version": "1.0.0",
   "scripts": {
-    "start": "set NODE_ENV=development&& .\\node_modules\\.bin\\webpack-dev-server",
-    "build": "set NODE_ENV=production&& .\\node_modules\\.bin\\webpack"
+    "start": "npm run watch",
+    "watch": "set NODE_ENV=development&& webpack-dev-server --hot",
+    "build": "set NODE_ENV=production&& webpack"
   },
   "author": "José Antônio <jose.silva.br@outlook.com>",
   "license": "ISC",

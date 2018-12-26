@@ -11,14 +11,6 @@ let pathsToClean = [
     'web/*.js'
 ];
 
-// the clean options to use
-let cleanOptions = {
-    root: '/full/webpack/root/path',
-    exclude: ['shared.js'],
-    verbose: true,
-    dry: false
-};
-
 plugins = [
     new CleanWebpackPlugin(pathsToClean),
     new HtmWebpackPlugin({
@@ -88,5 +80,9 @@ module.exports = {
             cert: fs.readFileSync("/etc/ssl/certs/behappy-public.pem"),
             key: fs.readFileSync("/etc/ssl/private/behappy-private.key")
         }*/
+    },
+    watchOptions: {
+        aggregateTimeout: 300,
+        poll: 1000
     }
 };
