@@ -8,7 +8,6 @@ export default function Input(props) {
 
     let propriedades = Object.assign({}, props);
     delete propriedades.valorInvalido;
-    console.log(propriedades);
     return (
         <input 
             type="text"

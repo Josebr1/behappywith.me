@@ -20,7 +20,6 @@ plugins = [
     new ExtractTextPlugin('style.css')
 ];
 
-console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'production') {
     plugins.push(
         new webpack.DefinePlugin({
